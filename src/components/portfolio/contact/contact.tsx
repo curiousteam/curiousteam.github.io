@@ -14,7 +14,7 @@ export function Contact() {
         <h2 className="contact-headline reveal">
           Let&apos;s build
           <br />
-          something <em>weird</em>
+          something <em>useful</em>
           <span className="cursor" />
         </h2>
 

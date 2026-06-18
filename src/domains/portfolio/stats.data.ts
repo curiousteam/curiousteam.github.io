@@ -2,22 +2,27 @@ import type { Stat } from "./portfolio.types";
 
 export const STATS: readonly Stat[] = [
   {
-    num: "500",
+    num: "50",
     plus: "+",
-    label: "Projects shipped",
-    desc: "Across web, AI workflows & e-commerce",
+    label: "Websites delivered",
+    desc: "Business sites, landing pages and CMS builds",
   },
   {
-    num: "8",
-    plus: "yrs",
-    label: "In the industry",
-    desc: "From hand-coded HTML to autonomous agents",
-  },
-  { num: "4.9", plus: "★", label: "Avg. rating", desc: "Verified across Fiverr & client reviews" },
-  {
-    num: "60",
+    num: "10",
     plus: "+",
-    label: "Happy clients",
-    desc: "Founders, agencies, solo operators worldwide",
+    label: "Software projects",
+    desc: "Admin panels, custom CMS and web applications",
+  },
+  {
+    num: "2015",
+    plus: "",
+    label: "Building since",
+    desc: "From HTML and PHP to modern React stacks",
+  },
+  {
+    num: "100",
+    plus: "%",
+    label: "Client-first process",
+    desc: "Clear scope, secure code and revisions until it is right",
   },
 ] as const;

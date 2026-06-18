@@ -13,7 +13,7 @@ export function Nav() {
         <Image src="/logo.png" alt="Curious Team" width={64} height={32} priority />
         <span>
           <span className="pulse" aria-hidden />
-          Curious Team / AI Manager
+          Curious Team / Full-Stack Developer
         </span>
       </a>
       <div className="nav-links">

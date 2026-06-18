@@ -13,15 +13,15 @@ export function Hero() {
         <div className="hero-meta-top">
           <div>
             <span>Portfolio / 2026</span>
-            <span className="v">Curious Team — V.04</span>
+            <span className="v">Curious Team - V.04</span>
           </div>
           <div style={{ textAlign: "center" }}>
             <span>Status</span>
-            <span className="v">◉ Available · Q3 / 24</span>
+            <span className="v">Available - Projects open</span>
           </div>
           <div style={{ textAlign: "right" }}>
             <span>Based</span>
-            <span className="v">Remote · GMT+6</span>
+            <span className="v">Bangladesh - GMT+6</span>
           </div>
         </div>
       </div>
@@ -31,8 +31,8 @@ export function Hero() {
 
         <div className="hero-bottom">
           <p className="hero-tag">
-            <strong>Curious Team</strong> is a one-person studio designing, building and operating
-            AI-powered web products — from hand-coded landings to autonomous agents.
+            <strong>Curious Team</strong> builds responsive websites, custom CMS, web applications
+            and integrations with the care of a senior full-stack developer.
           </p>
           <div className="hero-cta-row">
             <a href="#projects" className="btn btn-primary">
@@ -56,23 +56,23 @@ export function Hero() {
           <div className="hero-stats-mini">
             <div>
               <span className="n">
-                500
+                50
                 <span style={{ color: "var(--accent-2)", fontStyle: "italic" }}>+</span>
               </span>
-              <span className="l">Projects</span>
+              <span className="l">Websites</span>
             </div>
             <div>
               <span className="n">
-                8<span style={{ color: "var(--accent-2)", fontStyle: "italic" }}>yr</span>
+                10<span style={{ color: "var(--accent-2)", fontStyle: "italic" }}>+</span>
               </span>
-              <span className="l">In trade</span>
+              <span className="l">Software</span>
             </div>
             <div>
               <span className="n">
-                4.9
-                <span style={{ color: "var(--accent-2)", fontStyle: "italic" }}>★</span>
+                2015
+                <span style={{ color: "var(--accent-2)", fontStyle: "italic" }}>+</span>
               </span>
-              <span className="l">Rating</span>
+              <span className="l">Since</span>
             </div>
           </div>
         </div>

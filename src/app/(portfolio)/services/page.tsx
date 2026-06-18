@@ -3,9 +3,9 @@ import { Services } from "@/components/portfolio/services/services";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Services — Curious Team",
+  title: "Services - Curious Team",
   description:
-    "Productized offers with fixed scope and fixed prices: AI agents, full-stack, WordPress, Shopify, landing pages, rescue work.",
+    "Web application development, WordPress customization, responsive website design, REST APIs, payment integrations and PHP bug fixing.",
   path: "/services",
 });
 

@@ -6,11 +6,11 @@ export function Process() {
       <div className="container">
         <div className="section-head reveal">
           <h2>
-            How I work / <em>the loop</em>
+            How I work / <em>the delivery loop</em>
           </h2>
           <p className="lede">
-            Four steps. Same every time — for a $80 bug fix or a $20k AI build. The thing that
-            changes is the depth, not the order.
+            A simple process for both small fixes and complete builds: understand the goal, plan the
+            path, build carefully, then launch with support.
           </p>
         </div>
 

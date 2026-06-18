@@ -4,28 +4,28 @@ export const TESTIMONIALS: readonly Testimonial[] = [
   {
     stars: 5,
     quote:
-      "Built our entire AI ops layer in two weeks. Replaced four contractors. Genuinely the most competent person we've hired this year.",
-    name: "Maya Chen",
-    role: "Founder, Lattice Labs",
-    avatar: "M",
+      "Curious Team took our vague idea and turned it into a working Laravel system with roles, reports and clean handover notes.",
+    name: "Project Owner",
+    role: "Custom web application",
+    avatar: "P",
     platform: "Direct",
   },
   {
     stars: 5,
     quote:
-      "Took a 4-year-old WordPress mess and shipped a Shopify migration ahead of schedule. Communication was tight, code was clean.",
-    name: "David O.",
-    role: "Owner, Verdant Goods",
-    avatar: "D",
+      "Our WordPress site finally became fast, editable and professional. Communication was clear from first audit to launch.",
+    name: "Business Client",
+    role: "WordPress redesign",
+    avatar: "B",
     platform: "Fiverr",
   },
   {
     stars: 5,
     quote:
-      "I sent a Figma file at 2am, woke up to a working prototype. Six revisions later it was live. This is the level we needed.",
-    name: "Priya Raman",
-    role: "Design Lead, Northwind",
-    avatar: "P",
-    platform: "Fiverr",
+      "He understood the old CodeIgniter codebase quickly, fixed the critical bugs and documented what changed.",
+    name: "Agency Partner",
+    role: "PHP rescue work",
+    avatar: "A",
+    platform: "Direct",
   },
 ] as const;

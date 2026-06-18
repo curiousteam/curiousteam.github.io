@@ -7,11 +7,11 @@ export function Projects() {
       <div className="container">
         <div className="section-head reveal">
           <h2>
-            Selected work / <em>2024 — 26</em>
+            Selected work / <em>web systems</em>
           </h2>
           <p className="lede">
-            Six projects that show the range — AI tooling, e-commerce, brand sites. Click any card
-            for the full case study.
+            A focused snapshot of the kind of work Curious Team delivers: Laravel applications,
+            WordPress builds, legacy PHP fixes, payment integrations and responsive frontend work.
           </p>
         </div>
 

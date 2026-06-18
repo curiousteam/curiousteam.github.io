@@ -69,7 +69,7 @@ export function ContactForm() {
         Project type
         <select defaultValue="" {...register("projectType")}>
           <option value="" disabled>
-            Pick one…
+            Pick one...
           </option>
           {PROJECT_TYPES.map((value) => (
             <option key={value} value={value}>
@@ -84,7 +84,7 @@ export function ContactForm() {
       <label>
         Tell me more
         <textarea
-          placeholder="What are you building, what's the timeline, any links to share…"
+          placeholder="What do you need built or fixed? Share timeline, links and must-haves..."
           {...register("message")}
         />
         {errors.message ? <span className="field-error">{errors.message.message}</span> : null}
@@ -102,7 +102,7 @@ export function ContactForm() {
         style={{ alignSelf: "flex-start", marginTop: 8 }}
         disabled={busy}
       >
-        {submitted ? "✓ On its way" : busy ? "Sending…" : "Send brief"}
+        {submitted ? "Sent" : busy ? "Sending..." : "Send brief"}
         {!submitted && !busy ? (
           <svg
             className="arrow"

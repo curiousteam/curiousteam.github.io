@@ -7,11 +7,11 @@ export function Testimonials() {
       <div className="container">
         <div className="section-head reveal">
           <h2>
-            Words / <em>from clients</em>
+            Proof / <em>client outcomes</em>
           </h2>
           <p className="lede">
-            Verified reviews from Fiverr and direct clients. The full set lives on my profile —
-            these are the ones I&apos;m proudest of.
+            Clients usually come for a website, a fix or an integration. They stay for clear
+            communication, secure code and dependable support.
           </p>
         </div>
 

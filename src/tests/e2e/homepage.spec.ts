@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test.describe("Curious Team homepage", () => {
   test("hero headline renders and primary CTA is visible", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("manage");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("design");
     await expect(page.getByRole("link", { name: /See the work/i })).toBeVisible();
   });
 

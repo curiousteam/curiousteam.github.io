@@ -7,11 +7,11 @@ export function Services() {
       <div className="container">
         <div className="section-head reveal">
           <h2>
-            Services / <em>what I sell</em>
+            Services / <em>what I build</em>
           </h2>
           <p className="lede">
-            Productized offers with fixed scope and fixed prices. Most also live as Fiverr gigs —
-            direct DMs get priority and 10% off.
+            Practical web development services with clear scope, clean handover and support after
+            launch. Available for direct projects and Fiverr work.
           </p>
         </div>
 

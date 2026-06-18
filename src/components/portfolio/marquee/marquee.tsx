@@ -1,11 +1,11 @@
 const MARQUEE_ITEMS = [
-  "AI Manager",
+  "Full-Stack Developer",
   "Web Designer",
-  "Full-Stack Dev",
-  "Prompt Engineer",
-  "Shopify Expert",
-  "WordPress Pro",
-  "React Specialist",
+  "Laravel Developer",
+  "WordPress Specialist",
+  "CodeIgniter Expert",
+  "API Integrator",
+  "React Builder",
 ] as const;
 
 function MarqueeRow() {

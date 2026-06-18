@@ -4,57 +4,59 @@ export function About() {
       <div className="container">
         <div className="section-head reveal">
           <h2>
-            About / <em>The operator</em>
+            About / <em>The developer</em>
           </h2>
           <p className="lede">
-            A short bio for people who skip the hero. Eight years in the trenches, now pointing AI
-            at the boring parts so the craft can stay sharp.
+            A full-stack web developer from Bangladesh, building practical websites and software
+            since 2015 with a focus on clean delivery and long-term support.
           </p>
         </div>
 
         <div className="about-grid">
           <div className="about-portrait reveal">
-            <div className="placeholder">[ portrait — drop in a photo ]</div>
-            <div className="badge">Available for Q3</div>
+            <div className="placeholder">[ portrait - drop in a photo ]</div>
+            <div className="badge">Available for projects</div>
           </div>
 
           <div className="about-text reveal">
             <p>
-              I&apos;m an <em>AI Manager</em> who came up the long way — hand-coded HTML at 16, ten
-              years of WordPress and Shopify, then React, then agents.
+              I&apos;m a <em>full-stack web developer</em> with deep hands-on experience across
+              HTML, CSS, Bootstrap, Tailwind, JavaScript, jQuery, Ajax, PHP, MySQL, Laravel,
+              CodeIgniter and WordPress.
             </p>
             <p>
-              These days I run <strong>Curious Team</strong> as a quiet one-person studio: design
-              the system, build the thing, point the model at it, ship.
+              Through <strong>Curious Team</strong>, I help founders, agencies and business owners
+              turn ideas into reliable websites, custom CMS platforms, admin systems, APIs and
+              payment-enabled web applications.
             </p>
             <p>
-              The work spans serious AI tooling (RAG knowledge bases, multi-agent ops dashboards)
-              and beautifully-built marketing sites. Both are craft. Both reward the same patience.
+              The work is simple to explain: responsive design, secure code, search-friendly URLs,
+              easy installation, clear communication and support after launch.
             </p>
             <dl className="about-meta">
               <div>
                 <dt>Experience</dt>
-                <dd>8 years · Web + 2 yrs AI tooling</dd>
+                <dd>Since 2015 - web design and development</dd>
               </div>
               <div>
                 <dt>Location</dt>
-                <dd>Remote · GMT+6 (overlap with US/EU)</dd>
+                <dd>Bangladesh - remote worldwide</dd>
               </div>
               <div>
                 <dt>Focus areas</dt>
-                <dd>AI agents · Web apps · E-commerce</dd>
+                <dd>Web apps - CMS - WordPress - APIs</dd>
               </div>
               <div>
                 <dt>Tools</dt>
-                <dd>Cursor · Figma · Linear · Notion</dd>
+                <dd>Laravel - CodeIgniter - React - WordPress</dd>
               </div>
               <div>
                 <dt>Languages</dt>
-                <dd>English (fluent) · Bengali (native)</dd>
+                <dd>English - Bengali</dd>
               </div>
               <div>
                 <dt>Working style</dt>
-                <dd>Async-first · Daily updates · Fixed bids</dd>
+                <dd>Clear scope - steady updates - revisions</dd>
               </div>
             </dl>
           </div>

@@ -10,8 +10,8 @@ export function Skills() {
             Skills / <em>the toolkit</em>
           </h2>
           <p className="lede">
-            A working stack — not a dump of every framework I&apos;ve touched. These are the tools
-            I&apos;d pick if you handed me a brief tomorrow.
+            The stack I use to ship real client work: dependable PHP backends, editable CMS builds,
+            responsive interfaces, APIs, payments and modern JavaScript where it fits.
           </p>
         </div>
 

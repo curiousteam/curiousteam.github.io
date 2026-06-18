@@ -18,86 +18,99 @@ type Script = () => RawLine[];
 const SCRIPTS: Script[] = [
   () => [
     { kind: "prompt", cmd: "git status" },
-    { kind: "out", t: "On branch ", em: "feat/agent-loop", em2: "green" },
+    { kind: "out", t: "On branch ", em: "feature/client-cms", em2: "green" },
     {
       kind: "out",
-      t: "Your branch is ahead of ",
-      em: "'origin/main'",
+      t: "Working tree ready for ",
+      em: "handover",
       em2: "cyan",
-      t2: " by 4 commits.",
+      t2: ".",
     },
     { kind: "out", t: "" },
-    { kind: "out", t: "Changes to be committed:" },
-    { kind: "out", t: "  modified:   ", em: "src/agents/orchestrator.ts", em2: "green" },
-    { kind: "out", t: "  modified:   ", em: "src/lib/rag/pinecone.ts", em2: "green" },
-    { kind: "out", t: "  new file:   ", em: "src/prompts/router.md", em2: "green" },
-  ],
-  () => [
-    { kind: "prompt", cmd: "pnpm dev" },
-    { kind: "out", t: "> atlas@0.4.1 dev" },
-    { kind: "out", t: "> next dev --turbo", em: "", em2: "gray" },
-    { kind: "out", t: "" },
-    { kind: "out", t: "   ▲ Next.js 15.0.3 ", em: "(turbo)", em2: "gray" },
-    { kind: "out", t: "   - Local:        ", em: "http://localhost:3000", em2: "cyan" },
-    { kind: "out", t: "   - Environments: ", em: ".env.local", em2: "yellow" },
-    { kind: "out", t: "" },
-    { kind: "out", t: " ✓ Ready in ", em: "1.2s", em2: "green" },
-    { kind: "out", t: " ○ Compiling ", em: "/dashboard", em2: "cyan", t2: " ..." },
-    { kind: "out", t: " ✓ Compiled ", em: "/dashboard", em2: "green", t2: " in 412ms" },
-  ],
-  () => [
-    { kind: "prompt", cmd: 'claude run --agent ops --task "summarize tickets"' },
-    { kind: "out", t: "◐ ", em: "thinking", em2: "magenta", t2: "..." },
+    { kind: "out", t: "Recent changes:" },
     {
       kind: "out",
-      t: "→ ",
-      em: "tool_call",
-      em2: "cyan",
-      t2: '  list_tickets({ status: "open" })',
-    },
-    { kind: "out", t: "← ", em: "12 tickets", em2: "green", t2: " returned (240ms)" },
-    { kind: "out", t: "→ ", em: "tool_call", em2: "cyan", t2: '  embed_query("priority signals")' },
-    { kind: "out", t: "← ", em: "8 matches", em2: "green", t2: " (ada-002, 0.84 avg)" },
-    { kind: "out", t: "✓ ", em: "Summary written", em2: "green", t2: " to /reports/2026-05-04.md" },
-  ],
-  () => [
-    { kind: "prompt", cmd: "shopify theme push --store verdant-goods" },
-    {
-      kind: "out",
-      t: "✓ ",
-      em: "Theme uploaded",
+      t: "  modified:   ",
+      em: "app/Http/Controllers/AdminController.php",
       em2: "green",
-      t2: " (verdant-goods.myshopify.com)",
     },
-    { kind: "out", t: "  Files: ", em: "187 changed", em2: "cyan" },
-    { kind: "out", t: "  Speed: ", em: "+12 Lighthouse pts", em2: "yellow" },
-    { kind: "out", t: "  Preview: ", em: "https://vrd.gd/p/8f2a", em2: "cyan" },
+    { kind: "out", t: "  modified:   ", em: "resources/views/dashboard.blade.php", em2: "green" },
+    { kind: "out", t: "  new file:   ", em: "docs/client-handover.md", em2: "green" },
   ],
   () => [
-    { kind: "prompt", cmd: "vitest run --coverage" },
-    { kind: "out", t: " ✓ ", em: "agents/orchestrator.test.ts", em2: "green", t2: "  (8)" },
-    { kind: "out", t: " ✓ ", em: "lib/rag/retriever.test.ts", em2: "green", t2: "   (12)" },
-    { kind: "out", t: " ✓ ", em: "api/router.test.ts", em2: "green", t2: "         (5)" },
+    { kind: "prompt", cmd: "pnpm build" },
+    { kind: "out", t: "> curiousteam.github.io@0.1.0 build" },
+    { kind: "out", t: "> next build", em: "", em2: "gray" },
+    { kind: "out", t: "" },
+    { kind: "out", t: "   Next.js 16.2.4 ", em: "(static export)", em2: "gray" },
+    { kind: "out", t: "   Route:         ", em: "/", em2: "cyan" },
+    { kind: "out", t: "   Output:        ", em: "out/", em2: "yellow" },
+    { kind: "out", t: "" },
+    { kind: "out", t: " OK Ready in ", em: "1.2s", em2: "green" },
+    { kind: "out", t: " OK Compiled ", em: "/portfolio", em2: "green", t2: " in 412ms" },
+  ],
+  () => [
+    { kind: "prompt", cmd: "php artisan route:list --path=api" },
+    {
+      kind: "out",
+      t: "GET|HEAD  ",
+      em: "api/projects",
+      em2: "cyan",
+      t2: "  ProjectController@index",
+    },
+    {
+      kind: "out",
+      t: "POST      ",
+      em: "api/payments/paypal",
+      em2: "cyan",
+      t2: "  PaymentController@store",
+    },
+    {
+      kind: "out",
+      t: "PUT       ",
+      em: "api/users/{id}/role",
+      em2: "cyan",
+      t2: "  UserRoleController@update",
+    },
+    { kind: "out", t: "OK ", em: "REST endpoints documented", em2: "green" },
+  ],
+  () => [
+    { kind: "prompt", cmd: "wp theme status curious-business" },
+    {
+      kind: "out",
+      t: "OK ",
+      em: "Theme active",
+      em2: "green",
+      t2: " (Elementor + Astra)",
+    },
+    { kind: "out", t: "  Pages: ", em: "12 optimized", em2: "cyan" },
+    { kind: "out", t: "  SEO:   ", em: "clean URLs enabled", em2: "yellow" },
+    { kind: "out", t: "  Speed: ", em: "cache warmed", em2: "green" },
+  ],
+  () => [
+    { kind: "prompt", cmd: "vendor/bin/phpunit --testsuite=Feature" },
+    { kind: "out", t: " OK ", em: "AuthFlowTest", em2: "green", t2: "       (8)" },
+    { kind: "out", t: " OK ", em: "PaymentGatewayTest", em2: "green", t2: " (12)" },
+    { kind: "out", t: " OK ", em: "AdminReportTest", em2: "green", t2: "    (5)" },
     { kind: "out", t: "" },
     { kind: "out", t: " Test Files  ", em: "3 passed", em2: "green", t2: " (3)" },
     { kind: "out", t: "      Tests  ", em: "25 passed", em2: "green", t2: " (25)" },
-    { kind: "out", t: "   Coverage  ", em: "94.2%", em2: "cyan", t2: " lines" },
   ],
   () => [
-    { kind: "prompt", cmd: "ls -la apps/" },
-    { kind: "out", t: "drwxr-xr-x   ", em: "atlas", em2: "cyan" },
-    { kind: "out", t: "drwxr-xr-x   ", em: "helios", em2: "cyan" },
-    { kind: "out", t: "drwxr-xr-x   ", em: "promptforge", em2: "cyan" },
-    { kind: "out", t: "-rw-r--r--   ", em: "README.md", em2: "white" },
-    { kind: "out", t: "-rw-r--r--   ", em: "package.json", em2: "yellow" },
+    { kind: "prompt", cmd: "ls -la services/" },
+    { kind: "out", t: "drwxr-xr-x   ", em: "laravel-apps", em2: "cyan" },
+    { kind: "out", t: "drwxr-xr-x   ", em: "wordpress-sites", em2: "cyan" },
+    { kind: "out", t: "drwxr-xr-x   ", em: "api-integrations", em2: "cyan" },
+    { kind: "out", t: "-rw-r--r--   ", em: "handover-checklist.md", em2: "white" },
+    { kind: "out", t: "-rw-r--r--   ", em: "support-plan.md", em2: "yellow" },
   ],
   () => [
-    { kind: "prompt", cmd: "curl https://api.curiousteam.dev/status" },
+    { kind: "prompt", cmd: "curl https://curiousteam.github.io/status.json" },
     { kind: "out", t: "{" },
-    { kind: "out", t: '  "status": ', em: '"online"', em2: "green", t2: "," },
-    { kind: "out", t: '  "agents": ', em: "4", em2: "yellow", t2: "," },
-    { kind: "out", t: '  "uptime": ', em: '"42d 18h"', em2: "cyan", t2: "," },
-    { kind: "out", t: '  "queue":  ', em: "0", em2: "green" },
+    { kind: "out", t: '  "availability": ', em: '"open"', em2: "green", t2: "," },
+    { kind: "out", t: '  "websites":     ', em: '"50+"', em2: "yellow", t2: "," },
+    { kind: "out", t: '  "software":     ', em: '"10+"', em2: "cyan", t2: "," },
+    { kind: "out", t: '  "timezone":     ', em: '"GMT+6"', em2: "green" },
     { kind: "out", t: "}" },
   ],
 ];
@@ -168,7 +181,7 @@ export function TerminalBg() {
     void (async () => {
       pushLine({ kind: "banner", t: "Last login: Mon May  4 09:42:18 on ttys004" });
       await wait(400);
-      pushLine({ kind: "banner", t: "~/curious-team — zsh — 132x42" });
+      pushLine({ kind: "banner", t: "~/curious-team - zsh - 132x42" });
       await wait(300);
 
       let i = 0;
@@ -192,7 +205,7 @@ export function TerminalBg() {
         <span className="dot r" />
         <span className="dot y" />
         <span className="dot g" />
-        <span className="title">curious-team — zsh — 132×42</span>
+        <span className="title">curious-team - zsh - 132x42</span>
       </div>
       <div className="terminal-body">
         {lines.map((line) => {
@@ -213,9 +226,9 @@ export function TerminalBg() {
                 <span className="t-sep">:</span>
                 <span className="t-path">~/curious-team</span>
                 <span className="t-branch"> git:(</span>
-                <span className="t-branch-name">feat/agent-loop</span>
+                <span className="t-branch-name">feature/client-cms</span>
                 <span className="t-branch">) </span>
-                <span className="t-arrow">➜ </span>
+                <span className="t-arrow">&gt; </span>
                 <span className="t-cmd">{line.cmd}</span>
                 {line.typing ? <span className="t-cursor" /> : null}
               </div>

@@ -5,8 +5,8 @@ describe("contactSchema", () => {
   const valid = {
     name: "Jane Doe",
     email: "jane@example.com",
-    projectType: "ai-agent" as const,
-    message: "I want to build an autonomous research assistant for my team.",
+    projectType: "web-app" as const,
+    message: "I want to build a custom Laravel admin system for my team.",
   };
 
   it("accepts a fully valid brief", () => {

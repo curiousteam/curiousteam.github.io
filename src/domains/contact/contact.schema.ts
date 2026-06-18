@@ -1,10 +1,10 @@
 import { z } from "zod";
 
 export const PROJECT_TYPES = [
-  "ai-agent",
-  "full-stack",
+  "web-app",
   "wordpress",
-  "shopify",
+  "frontend",
+  "api-payment",
   "landing",
   "bug-fix",
 ] as const;
@@ -12,10 +12,10 @@ export const PROJECT_TYPES = [
 export type ProjectType = (typeof PROJECT_TYPES)[number];
 
 export const PROJECT_TYPE_LABELS: Record<ProjectType, string> = {
-  "ai-agent": "AI agent / workflow",
-  "full-stack": "Full-stack web app",
+  "web-app": "Custom web application",
   wordpress: "WordPress site",
-  shopify: "Shopify store",
+  frontend: "Website / frontend build",
+  "api-payment": "API / payment integration",
   landing: "Landing page",
   "bug-fix": "Bug fix / rescue",
 };

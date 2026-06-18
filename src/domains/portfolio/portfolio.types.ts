@@ -14,7 +14,7 @@ export type Stat = {
 export type Skill = {
   name: string;
   meta: string;
-  /** Proficiency percent (0–100) — drives skill-bar fill width. */
+  /** Proficiency percent (0-100) - drives skill-bar fill width. */
   w: number;
   featured?: boolean;
   span?: "span-4";

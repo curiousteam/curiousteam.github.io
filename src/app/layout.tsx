@@ -27,9 +27,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = buildMetadata({
-  title: "Curious Team — AI Manager · Web Designer · Developer",
+  title: "Curious Team - Full-Stack Web Developer",
   description:
-    "A one-person studio designing, building and operating AI-powered web products — from hand-coded landings to autonomous agents.",
+    "Bangladesh-based full-stack web developer building responsive websites, custom CMS, Laravel applications, WordPress sites, APIs and payment integrations.",
   path: "/",
 });
 
