@@ -5,7 +5,7 @@ type Channel = {
 };
 
 const CHANNELS: readonly Channel[] = [
-  { label: "Email", value: "hello@curiousteam.dev", href: "mailto:hello@curiousteam.dev" },
+  { label: "Email", value: "curiousteambd@gmail.com", href: "mailto:curiousteambd@gmail.com" },
   { label: "Fiverr", value: "/curiousteam", href: "https://www.fiverr.com/curiousteam" },
   { label: "LinkedIn", value: "in/curiousteam", href: "https://www.linkedin.com/in/curiousteam/" },
   { label: "GitHub", value: "@curiousteam", href: "https://github.com/curiousteam" },

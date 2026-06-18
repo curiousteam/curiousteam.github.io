@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function About() {
   return (
     <section id="about" data-screen-label="02 About">
@@ -14,7 +16,14 @@ export function About() {
 
         <div className="about-grid">
           <div className="about-portrait reveal">
-            <div className="placeholder">[ portrait - drop in a photo ]</div>
+            <Image
+              src="/rubel.jpeg"
+              alt="Rubel, full-stack web developer behind Curious Team"
+              fill
+              sizes="(max-width: 900px) 100vw, 34vw"
+              className="about-photo"
+              priority
+            />
             <div className="badge">Available for projects</div>
           </div>
 
