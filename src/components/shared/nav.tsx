@@ -11,10 +11,6 @@ export function Nav() {
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <a href="#hero" className="nav-brand">
         <Image src="/logo.png" alt="Curious Team" width={64} height={32} priority />
-        <span>
-          <span className="pulse" aria-hidden />
-          Curious Team / Full-Stack Developer
-        </span>
       </a>
       <div className="nav-links">
         {NAV_LINKS.map((link) => (
