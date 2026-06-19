@@ -1455,8 +1455,8 @@ section {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
   align-items: start;
   position: relative;
   z-index: 2;
@@ -1470,9 +1470,10 @@ section {
   overflow: hidden;
 }
 .contact-channel {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
   padding: 24px 28px;
   background: var(--bg);
   transition: all 0.3s;
@@ -1485,6 +1486,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
 }
 .contact-channel .label {
   font-family: var(--mono);
@@ -1497,10 +1499,12 @@ section {
   font-family: var(--serif);
   font-size: 24px;
   letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
 }
 .contact-channel .arrow {
   width: 36px;
   height: 36px;
+  flex: 0 0 auto;
   border-radius: 50%;
   border: 1px solid var(--line-2);
   display: grid;
@@ -1564,6 +1568,10 @@ section {
 @media (max-width: 800px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-channel {
+    padding: 20px;
   }
 }
 

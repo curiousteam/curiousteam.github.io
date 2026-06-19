@@ -13,9 +13,11 @@ test.describe("Curious Team homepage", () => {
     await expect(rail).toBeVisible();
   });
 
-  test("contact form validates required fields", async ({ page }) => {
+  test("contact channels are visible", async ({ page }) => {
     await page.goto("/#contact");
-    await page.getByRole("button", { name: /Send brief/i }).click();
-    await expect(page.locator(".field-error").first()).toBeVisible();
+    await expect(
+      page.getByRole("link", { name: /Email\s*curiousteambd@gmail.com/i }),
+    ).toBeVisible();
+    await expect(page.getByRole("link", { name: /GitHub\s*@curiousteam/i })).toBeVisible();
   });
 });
