@@ -6,9 +6,17 @@ type TestimonialCardProps = {
 };
 
 export function TestimonialCard({ testimonial, index }: TestimonialCardProps) {
+  const platform = testimonial.sourceUrl ? (
+    <a href={testimonial.sourceUrl} target="_blank" rel="noopener noreferrer">
+      {testimonial.platform}
+    </a>
+  ) : (
+    testimonial.platform
+  );
+
   return (
     <article className="testimonial reveal" style={{ transitionDelay: `${index * 0.06}s` }}>
-      <div className="platform">{testimonial.platform}</div>
+      <div className="platform">{platform}</div>
       <div className="stars" aria-label={`${testimonial.stars} out of 5 stars`}>
         {Array.from({ length: testimonial.stars }).map((_, j) => (
           <svg key={j} width="14" height="14" viewBox="0 0 24 24" fill="currentColor">

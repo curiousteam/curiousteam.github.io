@@ -3,6 +3,7 @@ import { NAV_LINKS, SECTION_IDS } from "@/domains/portfolio/nav.data";
 import { SKILLS } from "@/domains/portfolio/skills.data";
 import { PROJECTS } from "@/domains/portfolio/projects.data";
 import { SERVICES } from "@/domains/portfolio/services.data";
+import { TESTIMONIALS } from "@/domains/portfolio/testimonials.data";
 
 describe("portfolio data integrity", () => {
   it("nav links every entry has a unique numeric label", () => {
@@ -34,6 +35,13 @@ describe("portfolio data integrity", () => {
   it("each service has at least one deliverable", () => {
     for (const service of SERVICES) {
       expect(service.deliv.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("client testimonials point to a verifiable source", () => {
+    for (const testimonial of TESTIMONIALS) {
+      expect(testimonial.stars).toBe(5);
+      expect(testimonial.sourceUrl).toBe("https://www.fiverr.com/curiousteam");
     }
   });
 });

@@ -10,10 +10,20 @@ export function Testimonials() {
             Proof / <em>client outcomes</em>
           </h2>
           <p className="lede">
-            Clients usually come for a website, a fix or an integration. They stay for clear
-            communication, secure code and dependable support.
+            Real Fiverr buyer feedback from a 5.0 rated profile with 79 public reviews.
           </p>
         </div>
+
+        <a
+          className="review-proof reveal"
+          href="https://www.fiverr.com/curiousteam"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Fiverr</span>
+          <strong>5.0 / 5</strong>
+          <span>79 reviews</span>
+        </a>
 
         <div className="testimonials">
           {TESTIMONIALS.map((testimonial, index) => (
