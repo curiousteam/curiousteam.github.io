@@ -1,7 +1,6 @@
 export function Footer() {
   return (
     <>
-      <div className="footer-bigtype">Curious - Team -</div>
       <footer className="footer">
         <div>(c) {new Date().getFullYear()} Curious Team - All rights reserved</div>
         <div style={{ display: "flex", gap: 24 }}>

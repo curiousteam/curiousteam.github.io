@@ -1,5 +1,4 @@
 import { ContactChannels } from "./contact-channels";
-import { ContactForm } from "./contact-form";
 
 export function Contact() {
   return (
@@ -20,7 +19,6 @@ export function Contact() {
 
         <div className="contact-grid">
           <ContactChannels />
-          <ContactForm />
         </div>
       </div>
     </section>
