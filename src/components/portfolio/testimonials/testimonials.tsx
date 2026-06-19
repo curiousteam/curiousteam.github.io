@@ -10,7 +10,8 @@ export function Testimonials() {
             Proof / <em>client outcomes</em>
           </h2>
           <p className="lede">
-            Real Fiverr buyer feedback from a 5.0 rated profile with 79 public reviews.
+            Real Fiverr review text extracted from the profile screenshot, arranged as a client
+            proof wall.
           </p>
         </div>
 
@@ -22,12 +23,16 @@ export function Testimonials() {
         >
           <span>Fiverr</span>
           <strong>5.0 / 5</strong>
-          <span>79 reviews</span>
+          <span>20 shown from 79</span>
         </a>
 
         <div className="testimonials">
           {TESTIMONIALS.map((testimonial, index) => (
-            <TestimonialCard key={testimonial.name} testimonial={testimonial} index={index} />
+            <TestimonialCard
+              key={`${testimonial.name}-${testimonial.role}`}
+              testimonial={testimonial}
+              index={index}
+            />
           ))}
         </div>
       </div>

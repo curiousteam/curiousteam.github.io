@@ -39,6 +39,8 @@ describe("portfolio data integrity", () => {
   });
 
   it("client testimonials point to a verifiable source", () => {
+    expect(TESTIMONIALS.length).toBeGreaterThanOrEqual(20);
+
     for (const testimonial of TESTIMONIALS) {
       expect(testimonial.stars).toBe(5);
       expect(testimonial.sourceUrl).toBe("https://www.fiverr.com/curiousteam");
